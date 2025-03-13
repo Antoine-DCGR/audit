@@ -1,0 +1,164 @@
+/* Style global */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo-crimson {
+    margin-left: 25px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+#logo-crimson:hover {
+    transform: scale(1.1);
+}
+
+
+/* Style global du formulaire */
+#form_add {
+    background: rgba(0, 0, 0, 0.8); /* Fond sombre avec transparence */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 40px 40px;
+    width: 45%;
+    margin-top: 150px; /* Espace pour compenser le header */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.successMessage {
+    color: green;
+}
+
+.errorMessage {
+    color: red;
+}
+
+#form_add h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #7e8a92;
+    text-shadow: 0 0 10px rgba(77, 77, 77, 0.8);
+}
+
+/* Style du formulaire */
+#form_add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form_add form p{
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+}
+
+#form_add form select{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: revert;
+}
+
+/* Champs du formulaire */
+#form_add form label {
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    display: block;
+    margin-top: 15px;
+}
+
+#form_add form input[type="text"],
+#form_add form input[type="number"],
+#form_add form textarea {
+    width: 96%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+#form_add form input[type="text"]:focus,
+#form_add form input[type="number"]:focus,
+#form_add form textarea {
+    border-color: rgba(255, 69, 0, 0.8);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#form_add form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: initial;
+}
+
+/* Bouton du formulaire */
+#form_add form button[type="submit"] {
+    background: rgba(255, 69, 0, 0.8);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 12px;
+}
+
+#form_add form button[type="submit"]:hover {
+    background: rgba(255, 69, 0, 1);
+    transform: scale(1.05);
+}
+
+/* Placeholder style */
+#form_add form input::placeholder,
+#form_add form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+/* Zones de texte */
+#form_add form textarea {
+
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Ajout de style pour les erreurs */
+#form_add form .error {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 10px;
+}
